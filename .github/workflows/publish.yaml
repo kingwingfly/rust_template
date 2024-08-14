@@ -1,12 +1,9 @@
 name: publish
 
 on:
-  workflow_dispatch:
-    inputs:
-      CRATE:
-        description: "publish CRATE"
-        type: boolean
-        default: false
+  push:
+    tags:
+      - v[0-9]+.*
 
 env:
   CARGO_TERM_COLOR: always
@@ -23,5 +20,4 @@ jobs:
       - name: login to crates.io
         run: cargo login ${{ secrets.CRATESIO }}
       - name: publish CRATE
-        if: ${{ inputs.CRATE }}
-        run: .github/scripts/publish_test.sh CRATE && .github/scripts/publish.sh CRATE
+        run: .github/scripts/publish.sh CRATE
