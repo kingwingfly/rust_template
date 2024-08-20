@@ -9,7 +9,7 @@ description = ""
 license = "MIT"
 edition = "2021"
 repository = "https://github.com/kingwingfly/xxx"
-documentation = "https://docs.rs/gpt_core/xxx"
+documentation = "https://docs.rs/xxx"
 
 [workspace.dependencies]
 xxx_core = { path = "xxx_core" }
