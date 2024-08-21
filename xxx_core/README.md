@@ -68,7 +68,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://github.com/kingwingfly/repo_name)
 
 Change these: `repo_name`, `project_title`, `project_description`, `documentation_link`
 
